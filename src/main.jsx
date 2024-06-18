@@ -5,6 +5,8 @@ import './index.css';
 import HomeLayout from './components/HomeLayout';
 import Home from './components/home/Home';
 import AboutMe from './components/about/AboutMe';
+import Resume from './components/resume/Resume';
+import WhatIDid from './components/whatidid/WhatIDid';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -12,6 +14,8 @@ const router = createBrowserRouter(
       <Route path='/' element={<HomeLayout />}>
         <Route path='/' element={<Home />} />
         <Route path='/about-me' element={<AboutMe />} />
+        <Route path='/resume' element={<Resume />} />
+        <Route path='/what-i-did' element={<WhatIDid />} />
 
       </Route>
     </>

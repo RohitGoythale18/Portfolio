@@ -31,18 +31,18 @@ export default function Sidebar() {
                         About Me
                     </NavLink>
                     <NavLink
-                        to="/"
-                        className="text-xl font-semibold p-2 hover:text-blue-500"
-                        activeclassname="tab-name text-blue-500"
-                    >
-                        What I Do
-                    </NavLink>
-                    <NavLink
-                        to="/"
+                        to="/resume"
                         className="text-xl font-semibold p-2 hover:text-blue-500"
                         activeclassname="tab-name text-blue-500"
                     >
                         Resume
+                    </NavLink>
+                    <NavLink
+                        to="/what-i-did"
+                        className="text-xl font-semibold p-2 hover:text-blue-500"
+                        activeclassname="tab-name text-blue-500"
+                    >
+                        What I Do
                     </NavLink>
                     <NavLink
                         to="/"
