@@ -63,7 +63,7 @@ export default function WhatIDid() {
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">FULL STACK JAVA</p>
                                     <List className='list-disc'>
                                         <ListItem className='flex flex-col items-start px-5'>
-                                            Symbiosis Skills & Professional University and Capgemini 2023
+                                            Symbiosis Skills & Professional University and Capgemini
                                         </ListItem>
                                     </List>
                                 </Card>

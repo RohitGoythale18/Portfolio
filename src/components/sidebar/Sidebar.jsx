@@ -44,15 +44,15 @@ export default function Sidebar() {
                     >
                         What I Do
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         to="/"
                         className="text-xl font-semibold p-2 hover:text-blue-500"
                         activeclassname="tab-name text-blue-500"
                     >
                         Projects
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink
-                        to="/"
+                        to="/contact"
                         className="text-xl font-semibold p-2 hover:text-blue-500"
                         activeclassname="tab-name text-blue-500"
                     >
@@ -60,11 +60,11 @@ export default function Sidebar() {
                     </NavLink>
                 </div>
                 <div className='flex justify-evenly items-center text-gray-500 h-[10%]'>
-                    <FaLinkedin className='size-5' />
-                    <FaGithub className='size-5' />
-                    <FaInstagram className='size-5' />
-                    <FaXTwitter className='size-5' />
-                    <FaSkype className='size-5' />
+                    <FaLinkedin className='size-5 hover:text-[#20c997]' />
+                    <FaGithub className='size-5 hover:text-[#20c997]' />
+                    <FaInstagram className='size-5 hover:text-[#20c997]' />
+                    <FaXTwitter className='size-5 hover:text-[#20c997]' />
+                    <FaSkype className='size-5 hover:text-[#20c997]' />
                 </div>
             </nav>
         </>

@@ -7,6 +7,7 @@ import Home from './components/home/Home';
 import AboutMe from './components/about/AboutMe';
 import Resume from './components/resume/Resume';
 import WhatIDid from './components/whatidid/WhatIDid';
+import Contact from './components/contact/Contact';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,7 +17,7 @@ const router = createBrowserRouter(
         <Route path='/about-me' element={<AboutMe />} />
         <Route path='/resume' element={<Resume />} />
         <Route path='/what-i-did' element={<WhatIDid />} />
-
+        <Route path='/contact' element={<Contact />} />
       </Route>
     </>
   )
