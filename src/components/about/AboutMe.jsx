@@ -18,18 +18,20 @@ export default function AboutMe() {
                                 I am also familiar with various frameworks and libraries, such as React.js, Express.js and Node.js. I am a quick learner, and I thrive in fast-paced environments where no two days are the same. I am excited to bring my skills and experience to a dynamic team and contribute to the development of innovative web development and software solutions.
                             </p>
                         </div>
-                        <div className='flex flex-col text-white w-[30%]'>
+                        <div className='flex flex-col text-white w-[35%]'>
                             <div className='flex'>
-                                <div className='flex flex-col w-[30%]'>
+                                <div className='flex flex-col w-[40%]'>
                                     <label className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Name :</label>
                                     <label className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Email :</label>
-                                    <label className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Age :</label>
+                                    <label className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Mobile :</label>
+                                    <label className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Freelance :</label>
                                     <label className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>From :</label>
                                 </div>
                                 <div className='flex flex-col w-[100%]'>
                                     <p className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Rohit Goythale</p>
                                     <p className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>rohitgoythale23@gmail.com</p>
-                                    <p className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>23</p>
+                                    <p className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>+91 7774966707</p>
+                                    <p className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Available</p>
                                     <p className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Guhagar, Ratnagiri</p>
                                 </div>
                             </div>
