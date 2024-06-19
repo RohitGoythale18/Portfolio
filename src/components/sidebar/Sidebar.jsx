@@ -23,7 +23,7 @@ export default function Sidebar() {
                     <Link to='https://github.com/RohitGoythale18' target='_blank'><FaGithub className='size-5 hover:text-[#20c997]' /></Link>
                     <Link to='https://www.instagram.com/roya_18_02' target='_blank'><FaInstagram className='size-5 hover:text-[#20c997]' /></Link>
                     <Link to='https://twitter.com/RohitGoythale18' target='_blank'><FaXTwitter className='size-5 hover:text-[#20c997]' /></Link>
-                    <Link to='https://join.skype.com/invite/v1ELMAhCGpHR' target='_blank'><FaSkype className='size-5 hover:text-[#20c997]' /></Link>
+                    <Link to='' target='_blank'><FaSkype className='size-5 hover:text-[#20c997]' /></Link>
                 </div>
                 <div className="flex flex-col text-center mx-2 my-2 h-[50%] text-gray-500">
                     <NavLink
