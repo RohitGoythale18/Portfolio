@@ -1,6 +1,16 @@
 import React from 'react';
+import { FaDownload } from "react-icons/fa";
 
 export default function AboutMe() {
+    const downloadResume = () => {
+        const link = document.createElement('a');
+        link.href = '/resources/Rohit Goythale - Resume.pdf';
+        link.download = 'Rohit Goythale - Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <>
             <div className='min-h-screen bg-[#212529]'>
@@ -35,11 +45,16 @@ export default function AboutMe() {
                                     <p className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Guhagar, Ratnagiri</p>
                                 </div>
                             </div>
-                            <button className='text-white font-semibold my-5 p-3 rounded-full bg-green-400 transition duration-300 ease-in-out transform hover:bg-green-500'>Download Resume</button>
+                            <button
+                                onClick={downloadResume}
+                                className='flex items-center justify-center text-lg text-white font-semibold my-5 p-3 rounded-full bg-green-400 transition duration-300 ease-in-out transform hover:bg-green-600'
+                            >
+                                <FaDownload className='mr-3'/>
+                                Download Resume
+                            </button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </>
     )

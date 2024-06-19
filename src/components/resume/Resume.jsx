@@ -17,7 +17,7 @@ export default function Resume() {
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
                                     decoration="top"
-                                    decorationColor="indigo"
+                                    style={{ borderTopColor: '#20c997' }}
                                 >
                                     <Badge className='bg-[#20c997] rounded-md'>2021 - 2024</Badge>
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">BACHELOR OF COMPUTER ENGINEERING</p>
@@ -27,7 +27,7 @@ export default function Resume() {
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
                                     decoration="top"
-                                    decorationColor="indigo"
+                                    style={{ borderTopColor: '#20c997' }}
                                 >
                                     <Badge className='bg-[#20c997] rounded-md'>2019 - 2021</Badge>
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">Diploma in Computer Engineering</p>
@@ -37,7 +37,7 @@ export default function Resume() {
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
                                     decoration="top"
-                                    decorationColor="indigo"
+                                    style={{ borderTopColor: '#20c997' }}
                                 >
                                     <Badge className='bg-[#20c997] rounded-md'>2019</Badge>
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">H.S.C</p>
@@ -47,7 +47,7 @@ export default function Resume() {
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
                                     decoration="top"
-                                    decorationColor="indigo"
+                                    style={{ borderTopColor: '#20c997' }}
                                 >
                                     <Badge className='bg-[#20c997] rounded-md'>2017</Badge>
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">S.S.C</p>
@@ -61,7 +61,7 @@ export default function Resume() {
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
                                     decoration="top"
-                                    decorationColor="indigo"
+                                    style={{ borderTopColor: '#20c997' }}
                                 >
                                     <Badge className='bg-[#20c997] rounded-md'>10th Jan - 10th Apr 2024</Badge>
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">SLASH MARK</p>
@@ -76,7 +76,7 @@ export default function Resume() {
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
                                     decoration="top"
-                                    decorationColor="indigo"
+                                    style={{ borderTopColor: '#20c997' }}
                                 >
                                     <Badge className='bg-[#20c997] rounded-md'>5th Feb - 5th Mar 2024</Badge>
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">PLACEMENT DOST</p>
