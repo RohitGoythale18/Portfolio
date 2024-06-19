@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaLinkedin, FaGithub, FaInstagram, FaSkype, FaHome } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaSkype } from "react-icons/fa";
 import { FaXTwitter, FaRegUser } from "react-icons/fa6";
-import { IoIosDocument } from "react-icons/io";
+import { TiHomeOutline } from "react-icons/ti";
+import { IoDocumentOutline } from "react-icons/io5";
 import { RiBookReadLine } from "react-icons/ri";
 import { MdOutlineEmail } from "react-icons/md";
 
@@ -31,7 +32,7 @@ export default function Sidebar() {
                         className="flex items-center text-xl font-semibold p-2 hover:text-[#20c997]"
                         activeclassname="tab-name text-blue-500"
                     >
-                        <FaHome className='mx-5 size-6'/>
+                        <TiHomeOutline className='mx-5 size-6'/>
                         Home
                     </NavLink>
                     <NavLink
@@ -47,7 +48,7 @@ export default function Sidebar() {
                         className="flex items-center text-xl font-semibold p-2 hover:text-[#20c997]"
                         activeclassname="tab-name text-blue-500"
                     >
-                        <IoIosDocument className='mx-5 size-6'/>
+                        <IoDocumentOutline className='mx-5 size-6'/>
                         Resume
                     </NavLink>
                     <NavLink
