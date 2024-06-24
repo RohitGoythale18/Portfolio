@@ -6,13 +6,15 @@ export default function Resume() {
         <>
             <div className='h-[100vh]'>
                 <div className='bg-[#212529]'>
-                    <p className='text-9xl font-bold text-white text-center relative top-[80px] opacity-10'>SUMMARY</p>
+                    <p className='text-7xl font-bold text-white text-center relative top-[80px] opacity-10 md:text-9xl'>
+                        SUMMARY
+                    </p>
                     <div className='text-center relative'>
-                        <p className="text-white text-4xl font-semibold pt-0">
+                        <p className="text-white text-4xl font-semibold pt-6 md:pt-0">
                             Resume
                         </p>
-                        <div className='flex pt-10 text-white'>
-                            <div className='text-start px-10 w-[50%]'>
+                        <div className='flex flex-col pt-10 text-white md:flex md:flex-row'>
+                            <div className='text-center px-10 py-10 md:py-10 md:w-[50%] md:text-start'>
                                 <h2 className='text-2xl font-semibold mb-5'>My Education</h2>
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
@@ -56,7 +58,7 @@ export default function Resume() {
                                 </Card>
                             </div>
 
-                            <div className='text-start px-10 w-[50%]'>
+                            <div className='text-center px-10 py-10 md:py-10 md:w-[50%] md:text-start'>
                                 <h2 className='text-2xl font-semibold mb-5'>My Internships</h2>
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
@@ -65,12 +67,10 @@ export default function Resume() {
                                 >
                                     <Badge className='bg-[#20c997] rounded-md'>10th Jan - 10th Apr 2024</Badge>
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">SLASH MARK</p>
-                                    <List className='list-disc'>
-                                        <ListItem className='flex flex-col items-start px-5'>
-                                            <li>Create a Clone of Discord.com landing page.</li>
-                                            <li>Developed an own portfolio website.</li>
-                                            <li>Developed a Weather Forecasting app.</li>
-                                        </ListItem>
+                                    <List className='list-disc pl-5'>
+                                        <ListItem>Create a Clone of Discord.com landing page.</ListItem>
+                                        <ListItem>Developed an own portfolio website.</ListItem>
+                                        <ListItem>Developed a Weather Forecasting app.</ListItem>
                                     </List>
                                 </Card>
                                 <Card
@@ -80,11 +80,9 @@ export default function Resume() {
                                 >
                                     <Badge className='bg-[#20c997] rounded-md'>5th Feb - 5th Mar 2024</Badge>
                                     <p className="text-lg text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold mt-4">PLACEMENT DOST</p>
-                                    <List className='list-disc'>
-                                        <ListItem className='flex flex-col items-start px-5'>
-                                            <li>Developed an E-Commerce website using MERN.</li>
-                                            <li>Build a web-based Task Management Application.</li>
-                                        </ListItem>
+                                    <List className='list-disc pl-5'>
+                                        <ListItem>Developed an E-Commerce website using MERN.</ListItem>
+                                        <ListItem>Build a web-based Task Management Application.</ListItem>
                                     </List>
                                 </Card>
                             </div>

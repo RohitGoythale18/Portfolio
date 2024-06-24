@@ -6,15 +6,15 @@ import ProgressBar from '@ramonak/react-progress-bar';
 export default function WhatIDid() {
     return (
         <>
-            <div className='h-[100vh]'>
+            <div className='md:h-[100vh]'>
                 <div className='bg-[#212529]'>
-                    <p className='text-9xl font-bold text-white text-center relative top-[80px] opacity-10'>PORTFOLIO</p>
+                    <p className='text-7xl font-bold text-white text-center relative top-[80px] opacity-10 md:text-9xl'>PORTFOLIO</p>
                     <div className='text-center relative'>
-                        <p className="text-white text-4xl font-semibold">
+                        <p className="text-white text-4xl font-semibold pt-6 md:pt-0">
                             My Work
                         </p>
-                        <div className='flex pt-10 text-white'>
-                            <div className='text-start px-10 w-[50%]'>
+                        <div className='flex flex-col pt-10 text-white md:flex md:flex-row'>
+                            <div className='text-center px-10 py-10 md:py-10 md:w-[50%] md:text-start'>
                                 <h2 className='text-2xl font-semibold mb-5'>My Projects</h2>
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
@@ -53,7 +53,7 @@ export default function WhatIDid() {
                                     </List>
                                 </Card>
                             </div>
-                            <div className='text-start px-10 w-[50%]'>
+                            <div className='text-center px-10 py-10 md:py-10 md:w-[50%] md:text-start'>
                                 <h2 className='text-2xl font-semibold mb-5'>My Certificates</h2>
                                 <Card
                                     className="mx-auto max-w-[100%] rounded-lg my-5"
@@ -86,11 +86,11 @@ export default function WhatIDid() {
                     </div>
                 </div>
 
-                <div className='bg-[#212529] text-center pt-20'>
-                    <p className="text-white text-4xl font-semibold">
+                <div className='bg-[#212529] md:text-center md:pt-20'>
+                    <p className="text-white text-4xl text-center font-semibold">
                         My Skills
                     </p>
-                    <div className='grid grid-cols-2 gap-x-16 gap-y-5 px-10 py-16 text-white'>
+                    <div className='md:grid md:grid-cols-2 md:gap-x-16 md:gap-y-5 grid grid-cols-1 gap-y-5 px-10 py-16 text-white'>
                         <Card
                             className="text-white mx-auto my-auto py-2 rounded-lg"
                             decoration="left"
