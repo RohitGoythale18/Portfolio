@@ -77,7 +77,7 @@ export default function Sidebar({ open, setOpen }) {
             </nav>
 
             {/* Responsive Sidebar */}
-            <nav className={`text-white bg-[#111418] absolute w-full h-full z-10
+            <nav className={`text-white bg-[#111418] absolute w-full h-screen z-10
                 duration-500 ${open ? "left-0" : "left-[-100%]"}
             `}>
                 <IoIosClose
@@ -141,7 +141,7 @@ export default function Sidebar({ open, setOpen }) {
                         Contact
                     </NavLink>
                 </div>
-                <div className='text-white bg-[#111418] text-center mt-28 mb-2'>
+                <div className='text-white bg-[#111418] text-center mb-2 absolute w-full bottom-2'>
                     <p className='text-base font-normal my-1'>&copy; Copyright <strong>Portfolio</strong></p>
                     <p className='text-sm font-normal my-1'>Designed by <Link to='/' className='text-green-300 transition duration-300 ease-in-out transform hover:text-green-500 hover:underline'>Rohit Goythale</Link>.</p>
                 </div>
