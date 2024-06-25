@@ -10,7 +10,7 @@ export default function WhatIDid() {
 
     return (
         <>
-            <div className='md:h-[100vh]'>
+            <div className='h-[100vh]'>
                 <div className='bg-[#212529]'>
                     <div className='md:hidden'>
                         <IoIosMenu className='size-9 absolute top-3 left-3 rounded-full text-white cursor-pointer hover:bg-[#20c997] md:hidden' onClick={() =>

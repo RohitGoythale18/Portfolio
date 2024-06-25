@@ -17,7 +17,7 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className='min-h-screen bg-[#212529]'>
+            <div className='h-[100vh] bg-[#212529]'>
                 <div className='md:hidden'>
                     <IoIosMenu className='size-9 absolute top-3 left-3 rounded-full text-white cursor-pointer hover:bg-[#20c997] md:hidden' onClick={() =>
                         setOpen(!open)} />
@@ -37,7 +37,7 @@ export default function AboutMe() {
                                 I am also familiar with various frameworks and libraries, such as React.js, Express.js and Node.js. I am a quick learner, and I thrive in fast-paced environments where no two days are the same. I am excited to bring my skills and experience to a dynamic team and contribute to the development of innovative web development and software solutions.
                             </p>
                         </div>
-                        <div className='flex flex-col text-white md:w-[35%] md:mt-0 mt-14 md:px-0 px-5'>
+                        <div className='flex flex-col bg-[#212529] text-white md:w-[35%] md:mt-0 mt-14 md:px-0 px-5'>
                             <div className='flex'>
                                 <div className='flex flex-col w-[40%]'>
                                     <label className='border-b-2 border-green-600 mt-1 px-2 py-2 text-start'>Name :</label>
