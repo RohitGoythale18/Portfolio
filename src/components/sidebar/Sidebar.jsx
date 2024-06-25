@@ -77,7 +77,7 @@ export default function Sidebar({ open, setOpen }) {
             </nav>
 
             {/* Responsive Sidebar */}
-            <nav className={`text-white bg-[#111418] absolute w-full h-full
+            <nav className={`text-white bg-[#111418] absolute w-full h-full z-10
                 duration-500 ${open ? "left-0" : "left-[-100%]"}
             `}>
                 <IoIosClose

@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
 
-        <div className='w-full h-fit' style={{ backgroundImage: 'url(./home-bg-img.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-screen' style={{ backgroundImage: 'url(./home-bg-img.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className='md:hidden'>
                 <IoIosMenu className='size-9 absolute top-3 left-3 rounded-full text-white cursor-pointer hover:bg-[#20c997] md:hidden' onClick={() =>
                     setOpen(!open)} />
@@ -17,7 +17,7 @@ export default function Home() {
             </div>
             <div className='text-white min-h-screen flex flex-col justify-center text-center'>
                 <h1 className='text-4xl font-semibold my-5'>Welcome</h1>
-                <div className='flex flex-col justify-center items-center text-4xl md:text-6xl font-semibold my-2'>
+                <div className={`flex flex-col justify-center items-center text-4xl md:text-6xl font-semibold my-2 duration-500 "left-0" : "left-[-100%]"}`}>
                     <p>I'm</p>
                     <span className='mr-4' />
                     <Typewriter

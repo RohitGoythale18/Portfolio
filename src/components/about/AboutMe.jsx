@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaDownload } from "react-icons/fa";
+import { IoIosMenu } from 'react-icons/io';
+import Sidebar from '../sidebar/Sidebar';
 
 export default function AboutMe() {
+    const [open, setOpen] = useState(false);
+
     const downloadResume = () => {
         const link = document.createElement('a');
         link.href = '/resources/Rohit Goythale - Resume.pdf';
@@ -14,6 +18,11 @@ export default function AboutMe() {
     return (
         <>
             <div className='min-h-screen bg-[#212529]'>
+                <div className='md:hidden'>
+                    <IoIosMenu className='size-9 absolute top-3 left-3 rounded-full text-white cursor-pointer hover:bg-[#20c997] md:hidden' onClick={() =>
+                        setOpen(!open)} />
+                    <Sidebar className='' open={open} setOpen={setOpen} />
+                </div>
                 <p className='text-7xl font-bold text-white text-center relative top-[80px] opacity-10 md:text-9xl'>ABOUT ME</p>
                 <div className='text-center relative'>
                     <p className="text-white text-4xl font-semibold pt-6 md:pt-0">
@@ -49,7 +58,7 @@ export default function AboutMe() {
                                 onClick={downloadResume}
                                 className='flex items-center justify-center text-lg text-white font-semibold md:my-5 p-3 my-5 mb-14  rounded-full bg-green-400 transition duration-300 ease-in-out transform hover:bg-green-600'
                             >
-                                <FaDownload className='mr-3'/>
+                                <FaDownload className='mr-3' />
                                 Download Resume
                             </button>
                         </div>

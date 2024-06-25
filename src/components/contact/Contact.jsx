@@ -5,9 +5,12 @@ import { MdEmail } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import { IoIosMenu } from 'react-icons/io';
+import Sidebar from '../sidebar/Sidebar';
 
 export default function Contact() {
     const form = useRef();
+    const [open, setOpen] = useState(false);
     const [formErrors, setFormErrors] = useState({});
 
     const validate = () => {
@@ -54,6 +57,11 @@ export default function Contact() {
         <>
             <div className='h-[100vh]'>
                 <div className='bg-[#343a40] min-h-screen'>
+                    <div className='md:hidden'>
+                        <IoIosMenu className='size-9 absolute top-3 left-3 rounded-full text-white cursor-pointer hover:bg-[#20c997] md:hidden' onClick={() =>
+                            setOpen(!open)} />
+                        <Sidebar className='' open={open} setOpen={setOpen} />
+                    </div>
                     <p className='text-7xl font-bold text-white text-center relative top-[80px] opacity-10 md:text-9xl'>CONTACT</p>
                     <div className='text-center relative'>
                         <p className="text-white text-4xl font-semibold pt-6 md:pt-0">

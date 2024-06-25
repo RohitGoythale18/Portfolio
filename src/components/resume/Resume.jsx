@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Badge, Card, List, ListItem } from '@tremor/react';
+import { IoIosMenu } from 'react-icons/io';
+import Sidebar from '../sidebar/Sidebar';
 
 export default function Resume() {
+    const [open, setOpen] = useState(false);
+
     return (
         <>
             <div className='h-[100vh]'>
                 <div className='bg-[#212529]'>
+                    <div className='md:hidden'>
+                        <IoIosMenu className='size-9 absolute top-3 left-3 rounded-full text-white cursor-pointer hover:bg-[#20c997] md:hidden' onClick={() =>
+                            setOpen(!open)} />
+                        <Sidebar className='' open={open} setOpen={setOpen} />
+                    </div>
                     <p className='text-7xl font-bold text-white text-center relative top-[80px] opacity-10 md:text-9xl'>
                         SUMMARY
                     </p>

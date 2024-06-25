@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Badge, Card, List, ListItem } from '@tremor/react';
 import { Link } from 'react-router-dom';
 import ProgressBar from '@ramonak/react-progress-bar';
+import { IoIosMenu } from 'react-icons/io';
+import Sidebar from '../sidebar/Sidebar';
 
 export default function WhatIDid() {
+    const [open, setOpen] = useState(false);
+
     return (
         <>
             <div className='md:h-[100vh]'>
                 <div className='bg-[#212529]'>
+                    <div className='md:hidden'>
+                        <IoIosMenu className='size-9 absolute top-3 left-3 rounded-full text-white cursor-pointer hover:bg-[#20c997] md:hidden' onClick={() =>
+                            setOpen(!open)} />
+                        <Sidebar className='' open={open} setOpen={setOpen} />
+                    </div>
                     <p className='text-7xl font-bold text-white text-center relative top-[80px] opacity-10 md:text-9xl'>PORTFOLIO</p>
                     <div className='text-center relative'>
                         <p className="text-white text-4xl font-semibold pt-6 md:pt-0">
