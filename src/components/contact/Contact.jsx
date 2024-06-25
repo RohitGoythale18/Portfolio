@@ -58,7 +58,7 @@ export default function Contact() {
             <div className='h-[100vh]'>
                 <div className='bg-[#343a40] min-h-screen'>
                     <div className='md:hidden'>
-                        <IoIosMenu className='size-9 absolute top-3 left-3 rounded-full text-white cursor-pointer hover:bg-[#20c997] md:hidden' onClick={() =>
+                        <IoIosMenu className='size-9 z-10 absolute top-3 left-3 text-[#20c997] bg-gray-500 rounded-full cursor-pointer md:hidden' onClick={() =>
                             setOpen(!open)} />
                         <Sidebar className='' open={open} setOpen={setOpen} />
                     </div>

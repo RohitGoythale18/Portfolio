@@ -81,7 +81,7 @@ export default function Sidebar({ open, setOpen }) {
                 duration-500 ${open ? "left-0" : "left-[-100%]"}
             `}>
                 <IoIosClose
-                    className='size-9 absolute top-3 right-3 text-3xl rounded-full text-white hover:bg-[#20c997] cursor-pointer'
+                    className='size-9 absolute top-3 right-3 text-3xl text-[#20c997] bg-gray-500 rounded-full cursor-pointer'
                     onClick={() => setOpen(false)}
                 />
                 <div className='flex flex-col items-center pt-7 pb-5'>
